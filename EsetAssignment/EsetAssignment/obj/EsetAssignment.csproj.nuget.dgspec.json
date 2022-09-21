@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/gajdy55/Desktop/Zadanie/Eset/Appka/EsetAssignment/EsetAssignment/EsetAssignment.csproj": {}
+  },
+  "projects": {
+    "/Users/gajdy55/Desktop/Zadanie/Eset/Appka/EsetAssignment/EsetAssignment/EsetAssignment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gajdy55/Desktop/Zadanie/Eset/Appka/EsetAssignment/EsetAssignment/EsetAssignment.csproj",
+        "projectName": "EsetAssignment",
+        "projectPath": "/Users/gajdy55/Desktop/Zadanie/Eset/Appka/EsetAssignment/EsetAssignment/EsetAssignment.csproj",
+        "packagesPath": "/Users/gajdy55/.nuget/packages/",
+        "outputPath": "/Users/gajdy55/Desktop/Zadanie/Eset/Appka/EsetAssignment/EsetAssignment/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gajdy55/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.kros.wtf/api/v2": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
