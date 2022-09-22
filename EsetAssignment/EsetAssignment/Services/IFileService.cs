@@ -15,7 +15,7 @@ public interface IFileService<TDataSet>
     IEnumerable<TDataSet> GetFileContents();
 
     /// <summary>
-    /// Loading all content from file.
+    /// Set content to file.
     /// </summary>
     /// <typeparam name="T">File data content.</typeparam>  
     void SetFileContents(IEnumerable<TDataSet> sets);

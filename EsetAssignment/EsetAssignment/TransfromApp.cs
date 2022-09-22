@@ -16,7 +16,7 @@ public static class TransfromApp
     public static async Task Main(string[] args)
     {
         var fileNumberService = FileNumberService.GetFileService;
-
+        Console.WriteLine("Application starts");
         fileNumberService.LoadFileByPath(_inputFileName);
         int[] fileContent = fileNumberService.GetFileContents().ToArray();
         if (fileContent.Length == 0 || fileContent is null)
@@ -32,5 +32,6 @@ public static class TransfromApp
 
         fileNumberService.SetFileContents(fileContent);
         await fileNumberService.WriteToFile(_outputFileName);
+        Console.WriteLine("Application finished sucessfully.");
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace EsetAssignment.Services
 {
     /// <summary>
-    /// File service for working with files.
+    /// File service for working with numbers in file.
     /// </summary>
     public class FileNumberService : BaseFileService, IFileService<int>
     {
@@ -37,6 +37,7 @@ namespace EsetAssignment.Services
             }
         }
 
+        /// <inheritdoc/>
         public void SetFileContents(IEnumerable<int> sets) => _fileContent = sets.ToList();
 
         /// <inheritdoc/>

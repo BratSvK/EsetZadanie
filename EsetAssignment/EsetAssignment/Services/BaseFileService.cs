@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace EsetAssignment.Services
 {
@@ -10,7 +9,6 @@ namespace EsetAssignment.Services
     {
         protected BaseFileService()
         {
-
         }
 
         /// Load file by current path.
