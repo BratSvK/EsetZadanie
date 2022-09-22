@@ -8,21 +8,21 @@ The main task is to read input.txt file. Transform data, sort and save to output
 - This wrapper has the same accessing to items in complexity of O(1) through indexes.
 
 ### SORT
-For sorting purposes is the best to use QuickSort algorythm. In .Net we have two options how quicksort is implemented.
-1. Array.Sort(unstable, inplace)
-2. IEnumerable<x>.OrderBy(stable)
+For sorting purposes is the best to use **QuickSort algorythm**.
+In .Net we have two options how quicksort is implemented:
+1. __Array.Sort(unstable, inplace)__
+2. __IEnumerable<x>.OrderBy(stable)__
 
 - I went for an option with the **Array.Sort**. Despite it will **mutate** my unordered list of numbers but for this purpose it's acceptable.
 - This type of sorting is inplace and is more memory efficient.
 - Computational complexity of this algo is if we choose pivot as (median) -> (N*log2N).
 - Trick is that quicksort always divide unordered table at two sides less from the median, more then median
 - Algo is finish first iteration(in recursion proceess) when index from left side is greater than index from right side __(i > j)__
-- The next trick in my solution is using knownglade that transform metdhod always is returning the same numbers beside the same input.
-    - So i used this dictionary for loading unique values from file and translate them upon the key/value pair
-    - This translate numbers i applied to numbers in content of the file.
+- The next trick in my solution is using knowledge that transform method **always is returning the same numbers** beside the same input.
+    - For this i used key/value pair structure to store this translate numbers with keys from original file.
+    - So i used dictionary for loading unique values from file and translate them upon the key/value pair.
     - So there is no need to run transform method on every one number in file.
 - for write to file i used **File.WriteAllLinesAsync**, if the target file already exists, it is overwritten.
-
 
 ### RUNNING MANUAL
 - The application is console application.
